@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="backward_chaining/src"/>
+	<classpathentry kind="src" path="forword_chaining/src"/>
+	<classpathentry kind="output" path="backward_chaining/build/classes"/>
+</classpath>
