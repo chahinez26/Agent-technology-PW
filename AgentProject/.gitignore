@@ -1,4 +1,3 @@
 \bin\
 *.tmp
-.project
-.txt
+*.txt

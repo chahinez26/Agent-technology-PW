@@ -1,4 +1,4 @@
-package Lab3;
+package Lab4;
 
 import jade.core.Runtime;
 import jade.core.ProfileImpl;
@@ -10,8 +10,11 @@ public class Maincontainer {
     public static void main(String[] args) {
         try {
             Runtime rt = Runtime.instance();
+
             ProfileImpl pc = new ProfileImpl();
-            pc.setParameter(ProfileImpl.GUI, "true");  
+            pc.setParameter(ProfileImpl.GUI, "true");
+            pc.setParameter(ProfileImpl.MAIN_HOST, "localhost");
+            pc.setParameter(ProfileImpl.CONTAINER_NAME, "Main-Container");  
             AgentContainer container = rt.createMainContainer(pc);
 
             AgentController agent1 = container.createNewAgent(
@@ -25,7 +28,4 @@ public class Maincontainer {
         }
     }
 }
-
-
-
 
